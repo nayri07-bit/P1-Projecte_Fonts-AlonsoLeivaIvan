@@ -13,7 +13,6 @@ public class DAOComposicioOracle {
         this.conn = conn;
     }
 
-    // Obtener todos los hijos de un producto
     public List<Composicio> getByProducte(int itPare) {
         List<Composicio> list = new ArrayList<>();
         String sql = "SELECT pi_it_codi, it_nom, quantitat " +
@@ -37,7 +36,6 @@ public class DAOComposicioOracle {
         return list;
     }
 
-    // Insertar un hijo
     public void insert(int itPare, int itFill, int quantitat) {
         String sql = "INSERT INTO prod_item (pi_pr_codi, pi_it_codi, quantitat) VALUES (?, ?, ?)";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -50,7 +48,6 @@ public class DAOComposicioOracle {
         }
     }
 
-    // Borrar un hijo
     public void delete(int itPare, int itFill) {
         String sql = "DELETE FROM prod_item WHERE pi_pr_codi = ? AND pi_it_codi = ?";
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
