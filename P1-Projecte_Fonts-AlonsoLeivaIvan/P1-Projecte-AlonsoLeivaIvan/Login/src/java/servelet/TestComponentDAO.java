@@ -13,7 +13,6 @@ public class TestComponentDAO {
 
     public static void main(String[] args) {
 
-        // Parámetros de conexión
         String url = "jdbc:oracle:thin:@localhost:1521/XEPDB1";
         String user = "ALUMNE";
         String password = "alumne";
