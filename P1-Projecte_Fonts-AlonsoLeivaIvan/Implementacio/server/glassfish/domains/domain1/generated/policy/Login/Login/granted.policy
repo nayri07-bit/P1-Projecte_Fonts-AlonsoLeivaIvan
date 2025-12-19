@@ -1,0 +1,35 @@
+/* AUTOMATICALLY GENERATED ON Tue Dec 16 04:08:17 CET 2025*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebResourcePermission "/";
+  permission javax.security.jacc.WebUserDataPermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "servelet.ComponentServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.LlistarProductesServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.GuardarComponenteServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.InsertarItemServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.EditarItemServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.EditarProducteServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.BorrarComposicioServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.EditarComponentServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.InsertarProducteServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.BorrarComponentsServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.AsignarPreciosServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.CargarComponentServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.InsertarComponentServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.GestioComposicioServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.LoginServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.BorrarItemsServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.GestioProductesServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.GestioItemsServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.ArbolProductosServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.InsertarComposicioServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "servelet.HomeServlet", "**";
+};
+
